@@ -17,6 +17,8 @@ $(document).ready(function () {
   // get current hour from dayJS
   let currentHour = dayjs().hour();
   console.log("Current Hour in DayJS is " + currentHour);
+  // Testing/debugging only: change number to simulate the hour
+  // let currentHour = 11;
 
   // use .each jQuery function to execute function for all timeblocks (9-5PM)
   $(".time-block").each(function (){
@@ -54,15 +56,9 @@ $(document).ready(function () {
     $("#hour-17 .description").val(localStorage.getItem("hour-17"))
   };
 
+  // load notes from local storage on page loading
   init();
 
-  function displayReminders() {
-    myDay.forEach(function (_thisHour) {
-        $(`#${_thisHour.id}`).val(_thisHour.reminder);
-    })
-}
-
-  // TODO: Add code to display the current date in the header of the page.
   // Date & time powered by DayJS
     let currentTimeDay = dayjs();
     $("#currentDay").text(currentTimeDay.format(' MMM D, YYYY, h:mm a'));

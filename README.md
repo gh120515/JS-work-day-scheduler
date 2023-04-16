@@ -2,23 +2,23 @@
 
 ## Description
 
-<!-- To insert deployed link -->
-Application Link: <>
+Application Link: <https://gh120515.github.io/JS-work-day-scheduler/>
 
-This calendar web application is a web browser based planner that allows its user to save event for each hour of their workday(9AM - 5PM), according to their daily plan. It is built using HTML, CSS and powered by jQuery, in order for the builder to demonstrate knowledge and proficiency on these web languages.
+This scheduler web application is a web browser based planner that allows its user to save event for each hour of their workday(9AM - 5PM), according to their daily plan. It was built using HTML, CSS and powered by jQuery, in order to demonstrate my knowledge and proficiency on these languages.
 
 
 ## Usage
 
+ ![The application in use](Assets/img/function.png)
 
+The scheduler displays time in blocks from 9AM to 5PM (a typical workday), which notes can be entered into each hour. Write your schedule or notes in each field & click on the blue save icon to enter into the planner (don't forget to save, or you will lose your note!).
 
-<!-- Provide instructions and examples for use. Include screenshots as needed.
+Each timeblock will display as below depending on the time of the day:
+- grey: past
+- red: present
+- green: future
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
-
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ``` -->
+When your note(s) is saved, it is stored the the local storage of your browser, so they will stay even if you reload the page.
 
 ## Credits
 
@@ -27,11 +27,6 @@ Libraries used:
 - DayJS: <https://day.js.org/>
 - jQuery: <https://jquery.com/>
 
-<!-- List your collaborators, if any, with links to their GitHub profiles.
-
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well. -->
 
 ## License
 
