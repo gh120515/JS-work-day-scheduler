@@ -41,19 +41,26 @@ $(document).ready(function () {
   })
 
   // grab items from localStorge (set by id - eg hour-11) & set in each time block (9AM-5PM) when page is loaded
-  function init(){
-    $("#hour-9 .time-block").val(localStorage.getItem("hour-9"))
-    $("#hour-10 .time-block").val(localStorage.getItem("hour-10"))
-    $("#hour-11").val(localStorage.getItem("hour-11"))
-    $("#hour-12").val(localStorage.getItem("hour-12"))
-    $("#hour-13").val(localStorage.getItem("hour-13"))
-    $("#hour-14").val(localStorage.getItem("hour-14"))
-    $("#hour-15").val(localStorage.getItem("hour-15"))
-    $("#hour-16").val(localStorage.getItem("hour-16"))
-    $("#hour-17").val(localStorage.getItem("hour-17"))
+  function init() {
+    // item from localStorage is set into the 'description' class
+    $("#hour-9 .description").val(localStorage.getItem("hour-9")).text()
+    $("#hour-10 .description").val(localStorage.getItem("hour-10"))
+    $("#hour-11 .description").val(localStorage.getItem("hour-11"))
+    $("#hour-12 .description").val(localStorage.getItem("hour-12"))
+    $("#hour-13 .description").val(localStorage.getItem("hour-13"))
+    $("#hour-14 .description").val(localStorage.getItem("hour-14"))
+    $("#hour-15 .description").val(localStorage.getItem("hour-15"))
+    $("#hour-16 .description").val(localStorage.getItem("hour-16"))
+    $("#hour-17 .description").val(localStorage.getItem("hour-17"))
   };
 
   init();
+
+  function displayReminders() {
+    myDay.forEach(function (_thisHour) {
+        $(`#${_thisHour.id}`).val(_thisHour.reminder);
+    })
+}
 
   // TODO: Add code to display the current date in the header of the page.
   // Date & time powered by DayJS
