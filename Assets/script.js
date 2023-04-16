@@ -45,7 +45,7 @@ $(document).ready(function () {
   // grab items from localStorge (set by id - eg hour-11) & set in each time block (9AM-5PM) when page is loaded
   function init() {
     // item from localStorage is set into the 'description' class
-    $("#hour-9 .description").val(localStorage.getItem("hour-9")).text()
+    $("#hour-9 .description").val(localStorage.getItem("hour-9"))
     $("#hour-10 .description").val(localStorage.getItem("hour-10"))
     $("#hour-11 .description").val(localStorage.getItem("hour-11"))
     $("#hour-12 .description").val(localStorage.getItem("hour-12"))
