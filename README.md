@@ -5,7 +5,7 @@
 <!-- To insert deployed link -->
 Application Link: <>
 
-This calendar web application is a web browser based planner that allows its user to save event for each our of the day, according to their daily plan. It is built using HTML, CSS and powered by jQuery, in order for the builder to demonstrate knowledge and proficiency on these web languages.
+This calendar web application is a web browser based planner that allows its user to save event for each hour of their workday(9AM - 5PM), according to their daily plan. It is built using HTML, CSS and powered by jQuery, in order for the builder to demonstrate knowledge and proficiency on these web languages.
 
 
 ## Usage
@@ -21,6 +21,11 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
     ``` -->
 
 ## Credits
+
+Libraries used:
+- bootstrap: <https://getbootstrap.com>
+- DayJS: <https://day.js.org/>
+- jQuery: <https://jquery.com/>
 
 <!-- List your collaborators, if any, with links to their GitHub profiles.
 
